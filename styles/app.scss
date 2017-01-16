@@ -1,0 +1,9 @@
+@import 'utils';
+@import 'onboarding';
+@import 'visualFeedback';
+@import 'popup';
+@import 'visualDebug';
+
+div[role="banner"] {
+    background-color: green !important;
+}
