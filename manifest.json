@@ -1,18 +1,18 @@
 {
   "manifest_version": 2,
 
-  "name": "facebook.tracking.exposed",
+  "name": "cookies.tracking.exposed",
   "description": "Collaborative tool to support investigation of personalization algorithms.",
-  "version": "1.0.4",
+  "version": "0.0.1",
 
   "icons": {
-      "16": "fbtrex16.png",
-      "48": "fbtrex48.png",
-      "128": "fbtrex128.png"
+      "16": "cookie16.png",
+      "48": "cookie48.png",
+      "128": "cookie128.png"
   },
 
   "browser_action": {
-      "default_icon": "fbtrex16.png",
+      "default_icon": "cookie16.png",
       "default_popup": "popup.html"
 
   },
@@ -20,15 +20,12 @@
   "permissions": [
     "tabs",
     "storage",
-    "cookies"
+    "cookies",
+    "*://*/*"
   ],
 
-  "background": {
-      "scripts": ["./background.js"],
-      "persistent": false
-  },
-
   "web_accessible_resources": [
-      "*.png"
+      "*.png",
+      "*.html"
   ]
 }
